@@ -109,6 +109,8 @@
               </g>
             </svg>
           </div>
+
+          <!-- header search -->
           <div class="header__search">
             <div class="header__search-input-wrap">
               <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
@@ -147,8 +149,18 @@
             </button>
           </div>
 
+          <!-- header cart -->
           <div class="header__cart">
-            <i class="header__cart-icon fas fa-shopping-cart"></i>
+            <div class="header__cart-wrap">
+              <i class="header__cart-icon fas fa-shopping-cart"></i>
+              <span class="header__cart-notice">3</span>
+
+              <!-- no cart:   header__cart-list--no-cart -->
+              <div class="header__cart-list">
+                <img src="./assets/images/no-cart.png" alt="Không có sẩn phẩm nào" class="header__cart-no-cart-img">
+                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
