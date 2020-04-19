@@ -35,19 +35,25 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .grid__column-2 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 16.6667%;
 }
 
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+
 .grid__column-10 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 83.3333%
 }
 
@@ -183,6 +189,7 @@ html {
   border-radius: 2px;
   background-color: var(--white-color);
   display: none;
+  z-index: 2;
 }
 
 .select-input__link {
@@ -195,4 +202,43 @@ html {
 
 .select-input__link:hover {
   color: var(--primary-color);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination-item {
+  margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+  background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+  --height: 30px;
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #939393;
+  height: var(--height);
+  min-width: 40px;
+  text-align: center;
+  line-height: var(--height);
+  border-radius: 2px;
+}
+
+.pagination-item__etc .pagination-item__link{
+  cursor: default;
+  pointer-events: none;
 }
